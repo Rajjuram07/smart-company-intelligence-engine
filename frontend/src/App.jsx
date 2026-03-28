@@ -32,9 +32,10 @@ function App() {
 
     try {
       // Use the environment variable for the backend API URL
-      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+      // const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+      const apiUrl = 'https://smart-company-intelligence-engine-3.onrender.com';
       const modeApiKey = import.meta.env.VITE_APP_API_KEY || '';
-      const response = await fetch(`${apiUrl}/api/analyze`, {
+      const response = await fetch(`${apiUrl}/analyze`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
