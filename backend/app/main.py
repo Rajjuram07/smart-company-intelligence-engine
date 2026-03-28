@@ -49,7 +49,8 @@ def login(request: LoginRequest, db: Session = Depends(get_db)):
         raise HTTPException(status_code=401, detail="Invalid username or password")
     return {"success": True}
 
-@app.post("/api/analyze", response_model=CompanyResponse)
+# @app.post("/api/analyze", response_model=CompanyResponse)
+@app.post("/analyze", response_model=CompanyResponse)
 def analyze_company(request: CompanySearchRequest, auth: str = Depends(verify_api_key)):
     company_name = request.company_name
     if not company_name:
