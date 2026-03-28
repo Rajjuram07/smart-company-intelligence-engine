@@ -1,8 +1,7 @@
 fastapi
-uvicorn
+uvicorn[standard]
 google-generativeai
-google-search-results
-beautifulsoup4
 requests
+beautifulsoup4
 python-dotenv
-sqlalchemy
+google-search-results
