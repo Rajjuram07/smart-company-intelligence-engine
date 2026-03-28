@@ -1,7 +1,8 @@
-fastapi
-uvicorn[standard]
-google-generativeai
-requests
-beautifulsoup4
-python-dotenv
-google-search-results
+fastapi 
+uvicorn 
+google-generativeai 
+google-search-results 
+beautifulsoup4 
+requests 
+python-dotenv 
+sqlalchemy
